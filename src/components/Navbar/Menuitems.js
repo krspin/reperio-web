@@ -1,9 +1,14 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: 'test.html',
+        url: 'Home',
         cName: 'nav-links',
 
+    },
+    {
+        title: 'Recipes',
+        url: 'RecipeLookup',
+        cName: 'nav-links',
     },
     {
         title: 'About Us',

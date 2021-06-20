@@ -2,7 +2,13 @@ import React from "react";
 
 function About(){
     return (
-      <div><h1>Donation Page</h1></div>  
+        <body>
+        <div style={{margin: 50, alignItems: "center", justifyContent: "center", display: "flex", fontSize: 32}}>
+            Donate to Keep Our Servers Running!
+        </div>
+        
+    </body>
+      
     );
 }
 

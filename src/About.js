@@ -2,7 +2,13 @@ import React from "react";
 
 function About(){
     return (
-      <div><h1>Meet our team!</h1></div>  
+      <body>
+        <div style={{margin: 50, alignItems: "center", justifyContent: "center", display: "flex", fontSize: 32}}>
+            Meet Our Team!
+        </div>
+       
+    </body>
+      
     );
 }
 

@@ -12,3 +12,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.rectangle {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  background: green;
+}
+
+.rectangle2 {
+  display: inline-block;
+  width: 200px;
+  height: 75px;
+  background: green;
+}

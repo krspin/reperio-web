@@ -6,6 +6,8 @@ import { Route, Link } from "react-router-dom"
 import About from './About';
 import Login from './Login';
 import Donate from './Donate';
+import Recipe from './Recipe';
+import Home from './Home';
 
 function App() {
   return (
@@ -21,9 +23,12 @@ function App() {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <Search />
+          
         </div>
       </div>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/Home" component={Home} />
+      <Route exact path="/RecipeLookup" component={Recipe} />
       <Route exact path="/AboutUs" component={About} />
       <Route exact path="/Donate" component={Donate} />
       <Route exact path="/Login" component={Login} />
