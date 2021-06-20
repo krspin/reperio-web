@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
 body {
   background: white;
   margin: 0;
@@ -17,6 +19,7 @@ code {
   display: inline-block;
   width: 400px;
   height: 100px;
+  border-radius: 10%;
   background: green;
 }
 
@@ -24,5 +27,14 @@ code {
   display: inline-block;
   width: 200px;
   height: 75px;
+  border-radius: 10%;
+  background: green;
+}
+
+.rectangle3 {
+  display: inline-block;
+  width: 1000px;
+  height: 300px;
+  border-radius: 10%;
   background: green;
 }
