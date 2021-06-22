@@ -1,18 +1,19 @@
-import './App.css';
 import React from 'react';
-import Search from './components/Search'
-import Navbar from './components/Navbar/Navbar'
-import { Route, Link } from "react-router-dom"
-import About from './About';
-import Login from './Login';
-import Donate from './Donate';
-import Recipe from './Recipe';
-import Home from './Home';
+import { Route, Link } from "react-router-dom";
+
+import Search from './components/Search';
+import Navbar from './components/Navbar/Navbar';
+import About from './containers/About';
+import Login from './containers/Login';
+import Donate from './containers/Donate';
+import Recipe from './containers/Recipe';
+import Home from './containers/Home';
+
+import './App.css';
 
 function App() {
   return (
     <body>
-      
       <div style={{
         backgroundColor: 'green',
       }}>
@@ -23,7 +24,6 @@ function App() {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          
         </div>
       </div>
       <Route exact path="/" component={Home} />
@@ -32,11 +32,8 @@ function App() {
       <Route exact path="/AboutUs" component={About} />
       <Route exact path="/Donate" component={Donate} />
       <Route exact path="/Login" component={Login} />
-      
     </body>
-
   );
-
 }
 
 export default App;

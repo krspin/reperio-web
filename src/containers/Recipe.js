@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Search from "./components/Search";
+import Search from "../components/Search";
 import axios from "axios";
 
 
@@ -13,7 +13,7 @@ const useFetch = (targetUrl) => {
       }
       fetchData();
     }, [targetUrl]);
-  
+
     return data;
   };
 
@@ -22,19 +22,19 @@ const useFetch = (targetUrl) => {
 function Recipe() {
 
     //insert api key here
-    
+
     //removed for commit
     const result = useFetch(URL);
     //const recipeList = result.map((rec) => rec);
     //json object is result
     const recList = [];
-    
+
     for (var i in result){
         recList.push(i, result [i]);
     }
-    
 
-    
+
+
 
     return (
     <body>
@@ -47,13 +47,13 @@ function Recipe() {
         <div className= "recipes">
         <div>
         {recList}
-   
+
         <h1>Something else</h1>
         </div>
         </div>
-        
+
     </body>
-      
+
     );
 }
 
