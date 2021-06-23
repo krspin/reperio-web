@@ -8,6 +8,7 @@ import Login from './containers/Login';
 import Donate from './containers/Donate';
 import Recipe from './containers/Recipe';
 import Home from './containers/Home';
+import Routes from './Routes';
 
 import './App.css';
 
@@ -26,12 +27,7 @@ function App() {
         }}>
         </div>
       </div>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/Home" component={Home} />
-      <Route exact path="/RecipeLookup" component={Recipe} />
-      <Route exact path="/AboutUs" component={About} />
-      <Route exact path="/Donate" component={Donate} />
-      <Route exact path="/Login" component={Login} />
+      <Routes />
     </body>
   );
 }
